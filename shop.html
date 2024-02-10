@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- main style file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="overlay"></div>
+    <div class="scroll-top">
+      <i class="fa-solid fa-arrow-up scroll"></i>
+    </div>
+    <div class="header">
+      <div class="head">
+        <div class="search-up">
+          <i class="fa-solid fa-magnifying-glass sear"></i>
+          <i class="fa-solid fa-x x"></i>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search Product" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="ul">
+          <div class="x-mark">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="#features">features</a>
+            </li>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="#collection">collection</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="heading">
+          <a href="index.html">
+            <img src="img/BOTIGA.svg" alt="" />
+          </a>
+        </div>
+        <div class="icons">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass i-search"></i>
+          </div>
+          <div class="contact">
+            <i class="fa-regular fa-user user-icon"></i>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="length">0</span>
+          </div>
+          <div class="main-bars">
+            <i class="fa-solid fa-bars bars"></i>
+          </div>
+        </div>
+        <div class="searching">
+          <input
+            type="search"
+            placeholder="Search Product"
+            class="search-input"
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <div class="user">
+          <h2>login now</h2>
+          <input type="text" class="mail" placeholder="your email" />
+          <input type="password" class="pass" placeholder="your password" />
+          <p>don't have an account? <a href="#">create now</a></p>
+          <button class="main-button">login now</button>
+        </div>
+        <div class="carts">
+          <h2>your cart</h2>
+          <div class="product"></div>
+          <div class="buy">
+            <div class="total">
+              <p>Subtotal:</p>
+              <p id="subtotal">0</p>
+            </div>
+          </div>
+          <div class="btn-to-buy d-flex text-center flex-column">
+            <a href="cart.html" class="main-button checkout text-center"
+              >view cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start shop -->
+    <div class="shop">
+      <div class="container">
+        <div class="shop-now">
+          <div class="txt">
+            <h2>Shop</h2>
+            <p>
+              State the biggest use case of your product. Briefly expand on how
+              this will help your customers.
+            </p>
+          </div>
+          <div class="imgs row">
+            <div class="one col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1.avif" alt="suit" />
+              <div class="txt">
+                <p class="decr">clothing collections 2030</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">14</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+
+            <div class="two col-lg-4 col-md-6 col-sm-12">
+              <img src="img/11-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">styling watch</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">20</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/12-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">women watch</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">20</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-3-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">ascend hoodie</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">80</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-12-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">black biker boots</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">40</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-14-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">fashionablle shoes for men</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">35</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-15-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">Boots</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">35</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-17-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">trendy leather sandal for men</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">35</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/1-18-300x300.png" alt="suit" />
+              <div class="txt">
+                <p class="decr">austin shoe</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">70</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/9-300x300 (1).png" alt="suit" />
+              <div class="txt">
+                <p class="decr">kid’s watch</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">50</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/3.avif" alt="suit" />
+              <div class="txt">
+                <p class="decr">shoes spring 2030</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">18</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+            <div class="three col-lg-4 col-md-6 col-sm-12">
+              <img src="img/2.avif" alt="suit" />
+              <div class="txt">
+                <p class="decr">accessories</p>
+                <div class="stars">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="price">
+                  <span id="items"></span> $<span class="totalPrice">16</span>
+                </p>
+              </div>
+              <button class="main-button add-to-cards">Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end shop -->
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="right-left">
+          <div class="right">
+            <img src="img/BOTIGA.svg" alt="logo" />
+            <p>Give your customers insight into your product collection.</p>
+          </div>
+          <div class="left">
+            <div class="quick-links">
+              <h2>quick links</h2>
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a href="#collection">Collection</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="#contact">contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="about">
+              <h2>Blog</h2>
+              <ul>
+                <li>
+                  <a href="#shipping">shipping</a>
+                </li>
+                <li>
+                  <a href="#terms">terms</a>
+                </li>
+                <li>
+                  <a href="#policy">policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="txt">
+            <p>&copy; 2023 Botiga, proudly powered by Abdelrhman</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <script src="js/shop.js"></script>
+  </body>
+</html>
